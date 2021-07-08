@@ -1,0 +1,963 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: white;
+  background-color: #121318;
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ea384d), to(#d31027));
+  background-image: linear-gradient(to right, #ea384d, #d31027);
+  border-radius: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+button {
+  margin-top: 3rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ea384d), to(#d31027));
+  background-image: linear-gradient(to right, #ea384d, #d31027);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+}
+
+nav {
+  margin: 0 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+}
+
+nav .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+nav .navbar .brand {
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navbar .brand img {
+  height: 6rem;
+  margin-top: 2rem;
+}
+
+nav .navbar .toggle {
+  display: none;
+}
+
+nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .links ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .links ul li {
+  margin-left: 0.5rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+nav .links ul li:first-child {
+  border-bottom: #ea384d solid 0.1rem;
+}
+
+nav .links ul li:hover {
+  border-bottom: #ea384d solid 0.1rem;
+}
+
+nav .links ul li a {
+  text-decoration: none;
+  margin: 0 1rem;
+  padding-bottom: 1rem;
+  font-size: larger;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.main-container .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 5rem;
+  margin-left: 10rem;
+}
+
+.main-container .container .hero-content {
+  margin-top: 2rem;
+}
+
+.main-container .container .hero-content h1 {
+  font-size: 5rem;
+}
+
+.main-container .container .hero-image img {
+  height: 29rem;
+}
+
+.services-container .container {
+  margin: 4rem 8rem;
+}
+
+.services-container .container .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services-container .container .title-container .title {
+  font-size: 3.5rem;
+  color: #ea384d;
+}
+
+.services-container .container .title-container .subTitle {
+  width: 90%;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #a9afc3;
+}
+
+.services-container .container .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+}
+
+.services-container .container .services .service {
+  height: 23rem;
+  width: 22rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+}
+
+.services-container .container .services .service .icon {
+  background-color: white;
+  border-radius: 5rem;
+  height: 8rem;
+  width: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-container .container .services .service .icon i {
+  font-size: 4rem;
+  color: #ea384d;
+}
+
+.services-container .container .services .service .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services-container .container .services .service .content .services-title {
+  margin-top: 1rem;
+}
+
+.services-container .container .services .service .content .services-description {
+  text-align: center;
+  margin: 1rem 2rem;
+  color: #a9afc3;
+}
+
+.services-container .container .services .service.best {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ea384d), to(#d31027));
+  background-image: linear-gradient(to right, #ea384d, #d31027);
+}
+
+.services-container .container .services .service.best .content .services-description {
+  color: white;
+}
+
+.about-container {
+  margin: 8rem;
+}
+
+.about-container .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.about-container .container .image img {
+  height: 25rem;
+}
+
+.about-container .container .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-container .container .title-container .title {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: start;
+  color: #ea384d;
+}
+
+.about-container .container .title-container .subTitle {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #a9afc3;
+}
+
+.milestones-container {
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 0;
+}
+
+.milestones-container .milestone-title {
+  font-size: 3rem;
+  width: 70%;
+  text-align: center;
+}
+
+.milestones-container .milestones {
+  margin: 4rem 0 0 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 6rem;
+}
+
+.milestones-container .milestones .milestone {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ea384d), to(#d31027));
+  background-image: linear-gradient(to right, #ea384d, #d31027);
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.7rem 0.7rem;
+}
+
+.milestones-container .milestones .milestone .milestone-number {
+  font-size: 2.5rem;
+}
+
+.milestones-container .milestones .milestone .milestone-content {
+  font-size: 1.3rem;
+}
+
+.about-us-container .container {
+  margin: 8rem;
+}
+
+.about-us-container .container .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.about-us-container .container .title-container .title {
+  font-size: 3rem;
+  color: #ea384d;
+}
+
+.about-us-container .container .title-container .subTitle {
+  font-size: 1.5rem;
+  width: 50%;
+  text-align: center;
+  color: #a9afc3;
+}
+
+.about-us-container .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 4rem;
+}
+
+.about-us-container .container .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  margin: 0 0.5rem;
+  height: 25rem;
+  padding: 0 2rem;
+  border-radius: 1rem;
+}
+
+.about-us-container .container .cards .card .description {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #a9afc3;
+}
+
+.about-us-container .container .cards .card .photo {
+  height: 10rem;
+  width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+.about-us-container .container .cards .card .photo img {
+  border-radius: 10rem;
+  height: 8rem;
+}
+
+.about-us-container .container .cards .card .name {
+  font-size: 2rem;
+  color: #ea384d;
+}
+
+.about-us-container .container .cards .card .profile {
+  font-size: 1.3rem;
+}
+
+.questions-container {
+  margin: 6rem;
+}
+
+.questions-container .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.questions-container .container .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.questions-container .container .title-container .title {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: start;
+  color: #ea384d;
+}
+
+.questions-container .container .title-container .subTitle {
+  font-size: 1.5rem;
+  width: 90%;
+  color: #a9afc3;
+}
+
+.questions-container .container .image img {
+  height: 30rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  height: 7rem;
+  color: white;
+  background-color: black;
+}
+
+footer .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+footer .icons i {
+  font-size: 1.4rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+footer .icons i:hover {
+  color: #ea384d;
+}
+
+footer .brand img {
+  height: 5rem;
+  cursor: pointer;
+}
+
+footer .copy {
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+}
+
+.scrollToTop {
+  display: none;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 4rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ea384d), to(#d31027));
+  background-image: linear-gradient(to right, #ea384d, #d31027);
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.scrollToTop i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90%;
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  nav {
+    margin: 1rem;
+    padding-top: 0.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 2rem;
+  }
+  nav .navbar .brand img {
+    height: 5rem;
+  }
+  nav .navbar .toggle {
+    display: block;
+  }
+  nav .navbar .toggle i {
+    font-size: 2rem;
+  }
+  nav .nav-toggle {
+    height: 20rem !important;
+  }
+  nav .nav-toggle ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  nav .links {
+    width: 100%;
+    height: 0;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  nav .links ul {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  nav .links ul li {
+    border: none !important;
+  }
+  button {
+    margin: 2rem 0 3rem 0;
+  }
+  .main-container .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 1rem;
+  }
+  .main-container .container .hero-content h1 {
+    font-size: 3rem;
+  }
+  .main-container .container .hero-image img {
+    height: 18rem;
+  }
+  .services-container .container {
+    margin: 2rem 2rem;
+  }
+  .services-container .container .title-container .title {
+    font-size: 2rem;
+  }
+  .services-container .container .title-container .subTitle {
+    font-size: 1rem;
+  }
+  .services-container .container .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services-container .container .services .service {
+    width: 18rem;
+    margin-bottom: 2rem;
+  }
+  .about-container {
+    margin: 2rem;
+  }
+  .about-container .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .about-container .container .image img {
+    height: 14rem;
+  }
+  .about-container .container .title-container .title {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .about-container .container .title-container .subTitle {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .milestones-container .milestone-title {
+    font-size: 1.5rem;
+  }
+  .milestones-container .milestones {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .about-us-container .container {
+    margin: 2rem;
+  }
+  .about-us-container .container .title-container .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .about-us-container .container .title-container .subTitle {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .about-us-container .container .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+    margin: 0;
+  }
+  .about-us-container .container .cards .card {
+    margin: 0;
+    width: 15rem;
+  }
+  .questions-container {
+    margin: 2rem;
+  }
+  .questions-container .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .questions-container .container .title-container .title {
+    font-size: 2rem;
+  }
+  .questions-container .container .title-container .subTitle {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .questions-container .container .image img {
+    height: 13rem;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    padding: 2rem 0;
+  }
+  footer .copy {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    margin: 3rem;
+    padding-top: 0.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .navbar .brand img {
+    height: 5rem;
+  }
+  nav .navbar .toggle {
+    display: block;
+  }
+  nav .navbar .toggle i {
+    font-size: 2rem;
+  }
+  nav .nav-toggle {
+    height: 20rem !important;
+  }
+  nav .nav-toggle ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  nav .links {
+    width: 100%;
+    height: 0;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  nav .links ul {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  nav .links ul li {
+    border: none !important;
+  }
+  button {
+    margin: 2rem 0 3rem 0;
+  }
+  .main-container .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .main-container .container .hero-content h1 {
+    font-size: 4rem;
+  }
+  .services-container .container {
+    margin: 2rem;
+  }
+  .services-container .container .title {
+    font-size: 2rem;
+  }
+  .services-container .container .subTitle {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .services-container .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+  }
+  .services-container .services .service {
+    width: 30rem !important;
+  }
+  .about-container {
+    margin: 2rem;
+  }
+  .about-container .container {
+    gap: 2rem;
+  }
+  .about-container .container .title-container .title {
+    font-size: 2rem;
+  }
+  .about-container .container .title-container .subTitle {
+    font-size: 1rem;
+  }
+  .about-container .container .image img {
+    height: 12rem;
+  }
+  .milestones-container .milestone-title {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .milestones-container .milestones {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .about-us-container .container {
+    margin: 1rem;
+  }
+  .about-us-container .container .title-container .title {
+    font-size: 2rem;
+  }
+  .about-us-container .container .title-container .subTitle {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .about-us-container .container .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+  }
+  .questions-container .container {
+    gap: 4rem;
+  }
+  .questions-container .container .title-container .title {
+    font-size: 2rem;
+  }
+  .questions-container .container .title-container .subTitle {
+    font-size: 1rem;
+  }
+  .questions-container .container .image img {
+    height: 12rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    margin: 1rem;
+  }
+  .services-container .container .services {
+    gap: 2rem;
+  }
+  .services-container .container .services .service {
+    height: 28rem;
+    width: 30rem;
+  }
+  .about-container .container {
+    gap: 5rem;
+  }
+  .about-container .container .image img {
+    height: 20rem;
+  }
+  .milestones-container .milestones {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .about-us-container .container {
+    margin: 3rem;
+  }
+  .questions-container .container {
+    gap: 5rem;
+  }
+  .questions-container .container .image img {
+    height: 20rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
